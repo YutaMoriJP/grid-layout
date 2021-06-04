@@ -1,0 +1,98 @@
+ * {
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+     margin:0;
+     padding:0;
+ }
+
+h1, p {
+    padding:10px;
+}
+
+ body {
+     background-color: #edf2ff;
+     font-size:16px;
+    }
+
+ #blog-layout {
+     display: grid;
+     gap:5px;
+     margin: 5px;
+     grid-template-columns: repeat(10, 1fr);
+     grid-template-rows: repeat(8, 1fr);
+  }
+
+ #blog-layout > * {
+     padding: 10px;
+     color:white;
+ }
+
+ header {
+     grid-column: 1 / 11;
+     grid-row: 1 / 2;
+     background-color: slateblue;
+     text-align:center;
+     color:white;
+ }
+
+ aside {
+     grid-column: 1 / 4;
+     grid-row: 2 / 8;
+
+     background-color: steelblue;
+  }
+
+ main {
+     grid-column: 4 / 11;
+     grid-row: 2 / 8;
+
+     background-color: teal;
+ }
+
+ footer {
+     grid-column: 1 / 11;
+     grid-row: 8/9;
+
+     background-color: cadetblue;
+ }
+
+ @media screen and (max-width: 800px) {
+     body {
+         font-size: 14px;
+     }
+    #blog-layout {
+        height:100vh;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+     }   
+ 
+
+    header {
+        grid-column: 1 / 11;
+        grid-row: 1 / 2;
+        background-color: slateblue;
+        text-align:center;
+        color:white;
+    }
+    main {
+        grid-column: 1 / 11;
+        grid-row: 2 / 6;
+        background-color: teal;        
+         overflow: scroll;
+
+    }
+    aside {
+        grid-column: 1 / 11;
+        grid-row: 6 / 10;
+        background-color: steelblue;
+        overflow: scroll;
+
+     }
+    footer {
+        grid-column: 1 / 11;
+        grid-row: 10/11;
+        background-color: cadetblue;
+    }
+ }
+
+/*# sourceMappingURL=/gridBlogLayout.e31bb0bc.css.map */

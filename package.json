@@ -1,0 +1,15 @@
+{
+  "name": "gridbloglayout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html"
+    },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
